@@ -19,7 +19,7 @@ def checkLogin(request):
     success = User.objects.filter(Q(userEmail=email)&Q(userPassword=password)).count()
     if success == 0:
 	   return render_to_response('fail.html')
-    else
+    else:
 	   return render_to_response('success.html')
     return HttpResponse(data)
 
