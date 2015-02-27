@@ -14,4 +14,4 @@ class Message(models.Model):
     endTime = models.CharField(max_length=12)
 class Send(models.Model):
     mid = models.ForeignKey('Message')
-    uid = models.Foreignkey('User')
+    uid = models.ForeignKey('User')
