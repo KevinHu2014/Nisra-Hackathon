@@ -21,19 +21,23 @@ def checkLogin(request):
     if success == 0:
 	   return render_to_response('future/fail.html')
     else:
-	   return render_to_response('future/success.html')
-    return HttpResponse(data)
-	
+	   return render_to_response('future/success.html')	
 
 def loginPage(request):
     return render_to_response('Login.html')
   
 def userAdd(request):
-	email = request.POST["email"]
+	name = request.POST["userName"]
+	email = request.POST["userEmail"]
 	password = request.POST["password"]
 	checkCode = random.randint(1000,10000)
-	
-	user = User(userEmail=email,userPassword=password,checkCode=checkCode)
-	user.save()
-	
-	return render_to_response('userAdd.html')
+	while User.objects.filter(checkCode=checkCode).count() > 0
+		checkCode = random.randint(1000,10000)
+	success = User.objects.filter(userEmail=email).count()
+	if success == 0:
+		user = User(userName=name,userEmail=email,userPassword=password,checkCode=checkCode)
+		user.save()
+		#send email not to do
+		return render_to_response('future/UserSuccess.html')
+	else:
+		return render_to_response('future/UserFail.html')
