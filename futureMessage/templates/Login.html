@@ -2,30 +2,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="BIG5">
+<meta charset="utf-8">
 <title>Simple Traveler</title>
-<link href="styleForLogin.css" rel="stylesheet" type="text/css" >
 </head>
 <body>
 
 
 		<from action="/login" method="post">
-		<div id="one">
 		<input class="signup_field field_user_email"
-				 id="user_email" name="user[email]"
+				 id="user_email" name="useremail"
 				 size="35" tabindex="2" type="text" placeholder="Email" value="{{ current_name }}">
 		</div>
 		<div id="two">
-		<input class="signup_field field_user_password"
-				 id="user_password" name="user[password]"
+		<input class="signupField fieldUserPassword"
+				 id="userpassword" name="userpassword"
 				 size="35" tabindex="3" type="password" placeholder="Password" value=value="{{ password }}">
 		</div>
 		<input type="submit" value="OK">
 	</form>
-		<p>Or you can also:</p>
-		<div id="five">
-		<button type="submit" class="submit"
-				tabindex="7">���U</button>
-		</div>
 </body>
 </html>
