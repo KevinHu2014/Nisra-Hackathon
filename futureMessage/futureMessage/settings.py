@@ -86,5 +86,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
-    '/home/lmz/Nisra-Hackathon/futureMessage/templetes',
+    '/home/lmz/Nisra-Hackathon/futureMessage/templates',
+)
+TEMPLATE_DIRS = (
+    os.path.join(os.path.dirname(__file__),'templates').replace('\\','/'),
+    '/home/lmz/Nisra-Hackathon/futureMessage/templates',
 )

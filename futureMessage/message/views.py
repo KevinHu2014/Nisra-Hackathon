@@ -1,5 +1,4 @@
-from django.shortcuts import render
-
+from django.shortcuts import render_to_response
 from models import User
 from models import Message
 from models import Send
