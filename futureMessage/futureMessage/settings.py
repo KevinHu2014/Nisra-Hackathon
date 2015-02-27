@@ -92,3 +92,8 @@ TEMPLATE_DIRS = (
     os.path.join(os.path.dirname(__file__),'templates').replace('\\','/'),
     '/home/lmz/Nisra-Hackathon/futureMessage/templates',
 )
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'youremail@gmail.com'
+EMAIL_HOST_PASSWORD = 'yourpassword'
+EMAIL_PORT = 587
