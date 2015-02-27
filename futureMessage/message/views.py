@@ -3,7 +3,7 @@ from django.shortcuts import render
 from models import User
 from models import Message
 from models import Send
-
+from time import strftime
 # git test
 # Create your views here.
 def checkLogin(request):
@@ -15,3 +15,6 @@ def checkLogin(request):
     else:
         data = 'Login Success'
     return HttpResponse(data)
+def loginPage(request):
+    return render_to_response('Login.html')
+    
