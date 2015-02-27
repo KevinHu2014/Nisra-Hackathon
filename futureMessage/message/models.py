@@ -10,7 +10,7 @@ class User(models.Model):
     checkCode = models.CharField(max_length=10)
 class Message(models.Model):
     messageID = models.AutoField(primary_key=True)
-	addresseeEmail = models.CharField(max_length=30,unique=True)
+	addresseeEmail = models.CharField(default=addressee,max_length=30)
     title = models.CharField(max_length=20)
     content = models.TextField(blank=True)
     endTime = models.CharField(max_length=12)
