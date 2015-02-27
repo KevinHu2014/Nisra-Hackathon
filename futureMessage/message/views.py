@@ -31,7 +31,7 @@ def userAdd(request):
 	email = request.POST["userEmail"]
 	password = request.POST["password"]
 	checkCode = random.randint(1000,10000)
-	while User.objects.filter(checkCode=checkCode).count() > 0
+	while User.objects.filter(checkCode=checkCode).count() > 0:
 		checkCode = random.randint(1000,10000)
 	success = User.objects.filter(userEmail=email).count()
 	if success == 0:
