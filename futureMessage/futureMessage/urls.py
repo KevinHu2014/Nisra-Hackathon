@@ -10,5 +10,6 @@ urlpatterns = patterns('',
     url(r'^login/',views.checkLogin),
     url(r'^page/login/',views.loginPage),
 	url(r'^page/userAdd',view.userAdd),
+	url(r'^verifyCheckCode',view.verifyCheckCode),
 	
 )
