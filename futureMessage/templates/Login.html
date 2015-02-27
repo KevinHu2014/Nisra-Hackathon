@@ -8,16 +8,9 @@
 <body>
 
 
-		<from action="/login" method="post">
-		<input class="signup_field field_user_email"
-				 id="user_email" name="useremail"
-				 size="35" tabindex="2" type="text" placeholder="Email" value="{{ current_name }}">
-		</div>
-		<div id="two">
-		<input class="signupField fieldUserPassword"
-				 id="userpassword" name="userpassword"
-				 size="35" tabindex="3" type="password" placeholder="Password" value=value="{{ password }}">
-		</div>
+	<from action="/login" method="post">
+		<input id="email" type="text">
+		<input id="password" type="password">
 		<input type="submit" value="OK">
 	</form>
 </body>
