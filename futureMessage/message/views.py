@@ -19,9 +19,9 @@ def checkLogin(request):
     password = request.POST["password"]
     success = User.objects.filter(Q(userEmail=email)&Q(userPassword=password)).count()
     if success == 0:
-	   return render_to_response('fail.html')
-    else
-	   return render_to_response('success.html')
+	   return render_to_response('future/fail.html')
+    else:
+	   return render_to_response('future/success.html')
     return HttpResponse(data)
 	
 
