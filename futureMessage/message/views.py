@@ -42,7 +42,9 @@ def userAdd(request):
 		message	= 'Your Link is {0}'.format(checkLink)
 		email = settings.DEFAULT_FROM_EMAIL
 		recipients = email.split(',')
-		send_mail(mail_title,message,email,recipients,settings.EMAIL_HOST_USER,settings.EMAIL_HOST_PASSWORD)
+		sysTime = strftime('%Y%m%d%H%M')
+ 		if User.objects.filter(endTime=sysTime):
+            send_mail(mail_title,message,email,recipients,settings.EMAIL_HOST_USER,settings.EMAIL_HOST_PASSWORD)
 		return render_to_response('future/UserSuccess.html')
 	else:
 		return render_to_response('future/UserFail.html')
@@ -56,4 +58,6 @@ def verifyCheckCode(request):
 		vertigyCheck = User.objects.get(checkCode=check)
 		vertigyCheck.inVaild = True
 		return render_to_response('future/UserSuccess.html')
+def pageReg(request):
+    return render_to_response('future/Registration.html')
 	
