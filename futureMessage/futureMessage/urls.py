@@ -11,6 +11,6 @@ urlpatterns = patterns('',
     url(r'^page/login/',views.loginPage),
 	url(r'^page/userAdd',views.userAdd),
 	url(r'^verifyCheckCode',views.verifyCheckCode),
-	url(r'^page/Reg'views.pageReg),
+	url(r'^page/Reg',views.pageReg),
 	
 )
