@@ -9,8 +9,8 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^login/',views.checkLogin),
     url(r'^page/login/',views.loginPage),
-	url(r'^page/userAdd',view.userAdd),
-	url(r'^verifyCheckCode',view.verifyCheckCode),
+	url(r'^page/userAdd',views.userAdd),
+	url(r'^verifyCheckCode',views.verifyCheckCode),
 	url(r'^page/Reg'views.pageReg),
 	
 )

@@ -43,7 +43,8 @@ def userAdd(request):
 		email = settings.DEFAULT_FROM_EMAIL
 		recipients = email.split(',')
 		sysTime = strftime('%Y%m%d%H%M')
- 		if User.objects.filter(endTime=sysTime):
+		mailNumber = User.objects.filter(endTime=sysTime)
+ 		while mailNumber > 0:
             send_mail(mail_title,message,email,recipients,settings.EMAIL_HOST_USER,settings.EMAIL_HOST_PASSWORD)
 		return render_to_response('future/UserSuccess.html')
 	else:
