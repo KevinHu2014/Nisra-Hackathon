@@ -2,3 +2,47 @@
     background-image: url("img/BlueSky.jpg");
     padding: 0%
 }
+
+#zero {
+font-size:25px;
+font-weight: 100;
+font-family:Chiller;
+margin:30px auto 17px auto;
+padding:0%;
+
+}
+
+#one {
+background-color: #F1234F;
+border-radius: 10px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+height: 50px;
+width: 500px;
+font-size: 25px;
+font-weight: 100;
+border:1px;
+padding:10px 10px 10px 10px;
+
+}
+#two {
+background-color: #F1234F;
+border-radius: 10px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+height: 50px;
+width: 500px;
+font-size: 25px;
+font-weight: 100;
+border:1px;
+padding:10px 10px 10px 10px;
+}
+#HH {
+font-size:25px;
+font-weight: 100;
+font-family:·L³n¥¿¶ÂÅé;
+margin:30px auto 17px auto;
+padding:0%;
+}

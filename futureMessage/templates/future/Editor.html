@@ -4,36 +4,50 @@
 		<link href ="css/project.css" rel ="stylesheet" type ="text/css">
 	</head>
 <body id ="home">
-
-<h1>Letter for future</h1>
-
-
-<br>
-
-Addressee's Email：<input type="text" name="收件人Email" cols="20" value="">
-
-<br>
 <form action="action_page.php">
-<textarea name="message" rows="10" cols="50">
+<div id=zero>
+	<h1>Letter for future</h1>
+</div>
+
+<br>
+<div id=one>
+	Addressee's Email：<input type="text" name="收件人Email" size="35" tabindex="1" cols="20" value="">
+</div>
+<br>
+
+<textarea tabindex="2"  style="font-size:18px; name="message" rows="20" cols="100">
 </textarea>
 
 
 
 <br>
-Sender's name:<input type="text" name="">
+<div id=one>
+Sender's name:<input type="text" size="20" tabindex="3" name="">
+</div>
 <br>
-Sender's Email：<input type="text" name="">
+<div id=one>
+Sender's Email：<input type="text" size="35" tabindex="4" name="">
+</div>
 <br>
 <br>
-<p>西元年/月/日/時/分</p>
-<div id="one">
+<div id = two>
+西元年/月/日/時/分 
+</div>
+
+
+<br>
+<div id>
+		
 		<input class="signup_field field_user_email"
-				 id="user_email" name="user[email]" 
-				 size="35" tabindex="2" type="text" placeholder="EX:2015/12/31/23/59">
+				 id="email" name="email" 
+				 size="35" tabindex="5" type="text" placeholder="EX:2015/12/31/23/59" style="font-size:20px;>
 		</div>
 
+<br>
 
-<button type="button" >submit</button>
+<div >
+<button type="submit" size="10" tabindex="6">submit</button>
+</div>
 </form> 
 
 
