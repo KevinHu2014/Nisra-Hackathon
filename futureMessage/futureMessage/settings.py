@@ -94,6 +94,6 @@ TEMPLATE_DIRS = (
 )
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'youremail@gmail.com'
-EMAIL_HOST_PASSWORD = 'yourpassword'
+EMAIL_HOST_USER = 'fjuhackathon2015@gmail.com'
+EMAIL_HOST_PASSWORD = 'hackathon2015'
 EMAIL_PORT = 587

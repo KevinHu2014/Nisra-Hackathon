@@ -14,14 +14,19 @@ import random
 # Create your views here.
 @csrf_exempt
 def checkLogin(request):
-    print request.POST
-    email = request.POST.get("email")
-    password = request.POST.get("password")
-    success = User.objects.filter(Q(userEmail=email)&Q(userPassword=password)).count()
-    if success == 0:
-       return render_to_response('future/fail.html')
-    else:
-       return render_to_response('future/success.html')    
+    if request.method == 'GET':
+	    res = HttpResponse()
+		res.write('sdgsdfg')
+		return res
+	else:
+        print request.POST
+        email = request.POST.get("email")
+        password = request.POST.get("password")
+        success = User.objects.filter(Q(userEmail=email)&Q(userPassword=password)).count()
+        if success == 0:
+           return render_to_response('future/fail.html')
+        else:
+           return render_to_response('future/success.html')    
 
 def loginPage(request):
     return render_to_response('Login.html')
