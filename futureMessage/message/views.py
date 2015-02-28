@@ -29,7 +29,10 @@ def checkLogin(request):
            return render_to_response('future/fail.html')
         else:
            return render_to_response('future/success.html')    
-
+def checkLogin2(request)
+    res = HttpResponse()
+    res.write('sdgsdfg')
+    return res
 def loginPage(request):
     return render_to_response('Login.html')
   
